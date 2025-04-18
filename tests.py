@@ -112,5 +112,6 @@ class TestBooksCollector:
         collector.add_new_book('Шрек')
         collector.add_book_in_favorites('Золушка')
         collector.add_book_in_favorites('Шрек')
-        collector.get_list_of_favorites_books()
-        assert collector.favorites == ['Золушка','Шрек']
+        favorites_list = collector.get_list_of_favorites_books()
+        assert favorites_list == ['Золушка','Шрек']
+
